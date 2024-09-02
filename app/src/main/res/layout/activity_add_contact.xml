@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    tools:context=".AddContact">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_contact2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/black_oak"
+        app:tint="@color/dark_brown" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="110dp"
+       android:layout_height="110dp"
+       app:cardCornerRadius="60dp"
+       android:layout_gravity="center">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/foto_contacto"
+           android:background="@drawable/contact_circle"
+           android:src="@drawable/ic_person"
+           android:scaleType="centerCrop"
+           />
+
+   </androidx.cardview.widget.CardView>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:hint="Nombre"
+        android:background="@drawable/texto_rectangle"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_text_fields"
+        android:drawableTint="@color/black_oak"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/telefono"
+        android:hint="Teléfono"
+        android:background="@drawable/texto_rectangle"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawableTint="@color/black_oak"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:background="@drawable/texto_rectangle"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableTint="@color/black_oak"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/direccion"
+        android:hint="Dirección"
+        android:background="@drawable/texto_rectangle"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_home"
+        android:drawableTint="@color/black_oak"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nota"
+        android:hint="Nota"
+        android:background="@drawable/texto_rectangle"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_note"
+        android:drawableTint="@color/black_oak"
+        android:drawablePadding="15dp"
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

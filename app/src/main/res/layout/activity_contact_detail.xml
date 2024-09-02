@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    tools:context=".AddContact">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_contact_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_edit"
+        app:backgroundTint="@color/black_oak"
+        app:tint="@color/dark_brown" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete_contact_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_delete"
+        app:backgroundTint="@color/black_oak"
+        app:tint="@color/dark_brown" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/foto_contacto_detail"
+            android:background="@color/black_oak"
+            android:src="@drawable/ic_person"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre_detail"
+            android:padding="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Nombre"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:background="@color/dark_brown">
+        <TableRow>
+            <TextView
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableTint="@color/black_oak"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Phone: "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/telefono_detail"
+                android:text="123456789"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:drawableStart="@drawable/ic_email"
+                android:drawableTint="@color/black_oak"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Email: "
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_detail"
+                android:text="1234@email.com"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:drawableStart="@drawable/ic_home"
+                android:drawableTint="@color/black_oak"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirección: "
+                android:padding="10dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/direccion_detail"
+                android:padding="10dp"
+                android:text="Mi dirección"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:drawableStart="@drawable/ic_note"
+                android:drawableTint="@color/black_oak"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota: "
+                android:padding="10dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nota_detail"
+                android:padding="10dp"
+                tools:text = "Notas Notas notas "
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+
+        </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
